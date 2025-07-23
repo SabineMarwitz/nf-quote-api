@@ -55,6 +55,5 @@ const quotes: Quote[] = [
 ];
 
 export const getQuoteData = (): Quote[] => {
-  console.log('quotes.data.ts');
   return [...quotes];
 };

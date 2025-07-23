@@ -12,8 +12,8 @@ export class QuoteController {
     return this.quoteService.getAllQuotes();
   }
 
-  @Get('/test')
-  getTest(): string {
-    return this.quoteService.getTest();
+  @Get('/random')
+  getOne(): Quote | string {
+    return this.quoteService.getRandomQuote();
   }
 }

@@ -10,7 +10,12 @@ export class QuoteService {
     return this.quoteRepository.getAll();
   }
 
-  getTest(): string {
-    return 'THIS IS A TEST!';
+  getRandomQuote(): Quote | string {
+    const length = this.quoteRepository.getAll().length;
+    if (length > 0) {
+      const index = Math.floor(Math.random() * length);
+      return this.quoteRepository.getAll()[index];
+    }
+    return 'No quote avialable';
   }
 }
