@@ -3,6 +3,9 @@
 /node_modules
 /build
 
+# older code
+*.old
+
 # Logs
 logs
 *.log

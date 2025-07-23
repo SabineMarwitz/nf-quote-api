@@ -1,4 +1,4 @@
-import { Quote } from './interfaces/quote.interface';
+import { Quote } from '../quotes/interfaces/quote.interface';
 
 const quotes: Quote[] = [
   {
@@ -54,11 +54,7 @@ const quotes: Quote[] = [
   },
 ];
 
-export const getAllQuotes = (): Quote[] => {
+export const getQuoteData = (): Quote[] => {
+  console.log('quotes.data.ts');
   return [...quotes];
-};
-
-export const getOneQuote = (): Quote => {
-  const aQuote = quotes[0];
-  return aQuote;
 };
