@@ -16,6 +16,6 @@ export class QuoteService {
       const index = Math.floor(Math.random() * length);
       return this.quoteRepository.getAll()[index];
     }
-    return 'No quote avialable';
+    return 'No quote available';
   }
 }

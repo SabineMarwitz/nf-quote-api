@@ -4,8 +4,8 @@ import { QuoteService } from './quote.service';
 import { QuoteRepository } from './quote.repository';
 
 @Module({
-  imports: [],
   controllers: [QuoteController],
   providers: [QuoteService, QuoteRepository],
+  exports: [QuoteService],
 })
 export class QuoteModule {}

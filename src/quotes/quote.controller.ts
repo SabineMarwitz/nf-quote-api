@@ -3,7 +3,7 @@ import { Controller, Get } from '@nestjs/common';
 import { QuoteService } from './quote.service';
 import { Quote } from './interfaces/quote.interface';
 
-@Controller()
+@Controller('quotes')
 export class QuoteController {
   constructor(private readonly quoteService: QuoteService) {}
 
